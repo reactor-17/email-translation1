@@ -1,0 +1,39 @@
+body {
+
+    margin: 0;
+
+}
+
+ 
+
+.navbar {
+
+    background-color: #DDDDDD;
+
+    margin-bottom: 10px;
+
+    padding: 8px;
+
+}
+
+ 
+
+.navbar-brand {
+
+    font-size: larger;
+
+}
+
+ 
+
+section {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 8px;
+
+ 
+
+}

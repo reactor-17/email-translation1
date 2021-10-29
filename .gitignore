@@ -1,0 +1,7 @@
+token.json
+service-account-credentials.json
+**/__pycache__/
+curlcheck
+token.pickle
+languagecomm/
+uconn-datastore/

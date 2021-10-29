@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="#">
+    <meta name="author" content="#">
+    <link rel="stylesheet" href="#">
+  </head>
+  <body>
+      <div>
+          <!-- loops through the list of dictionaries 'emails', and displays them-->
+          <p>Emails:</p><br></br>
+          {% for i in emails %}
+            <p>From: {{i['from']}}</p>
+            <p>To: {{i['to']}}</p>
+            <p>Date: {{i['date']}}</p>
+            <p>Subject: {{i['subject']}}</p>
+            <p>Body: {{i['body']}}</p><br></br>
+          {% endfor %}
+      </div>
+    <script src="#"></script>
+  <body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CRUD Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/static/style.css">
+    </head>
+    <body>
+        {# NavBar #}
+        <nav class="navbar">
+            <a class="navbar-brand" href="/">users</a>
+            <a href="/create">Add user</a>
+        </nav>
+        {# User List #}
+        <section>
+            <h2>User</h2>
+            <ul>
+                {# user.name is the item in list we display for selection #}
+                {% for user in users %}
+                <li><a href="/read/{{ user.Name }}">{{ user.Name }}</a></li>
+                {% else %}
+                <li>You have no users yet. Click <a href="/create">here</a> or "Add user" in the navbar to create one.</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </body>
+</html>
